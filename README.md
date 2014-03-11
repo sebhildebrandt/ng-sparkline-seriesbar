@@ -22,7 +22,7 @@ Warning: bower will not install jquery.sparkline correctly. You need to do the f
 make
 ```
 
-After that you should have a file ```jquery.sparkline``` in the path ```components/jquery.sparkline/dist```
+After that you should have a file ```jquery.sparkline.js``` in the path ```components/jquery.sparkline/dist```
 
 ## Usage
 
@@ -34,7 +34,6 @@ After that you should have a file ```jquery.sparkline``` in the path ```componen
     <script src="../components/jquery.sparkline/dist/jquery.sparkline.js"></script>
     <script src="../components/angular/angular.min.js"></script>
     <script src="../ng-sparkbartracker.js"></script>
-    <script src="../demo/app.js"></script>
 </head>
 <body ng-controller="myController">
 <div class="wrapper">   
@@ -61,7 +60,6 @@ height|height|fixed height (optional)|height=20
 barColor|bar-color|color of bars|bar-color='green'
 barWidth|bar-width|width of each bar in px|bar-width=4
 barSpacing|bar-spacing|pixels between two bars|bar-spacing=1
-tooltipPrefix|||
 tooltipPrefix|tooltip-prefix|prefix to tooltip|tooltip-prefix='Speed:'
 tooltipSuffix|tooltip-suffix|suffix to tooltip|tooltip-suffix='kBytes/s'
 numberDigitGroupSep|number-digit-group-sep|seperator for digit group|number-digit-group-sep=','
@@ -80,7 +78,9 @@ If you have ideas or comments, please do not hesitate to contact me.
 Happy tracking!
 
 Sincerely,
+
 Sebastian Hildebrandt
+
 http://www.plus-innovations.com
 
 
