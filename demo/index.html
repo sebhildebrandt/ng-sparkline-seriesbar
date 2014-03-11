@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script src="../components/jquery/dist/jquery.min.js"></script>
+    <script src="../components/jquery.sparkline/dist/jquery.sparkline.js"></script>
+    <script src="../components/angular/angular.min.js"></script>
+    <script src="../ng-sparkline-bartrack.js"></script>
+    <script src="../demo/app.js"></script>
+    <style type="text/css">
+        .wrapper {
+            width: 100%;
+        }
+    </style>
+</head>
+<body ng-controller="myController">
+<div class="wrapper">   
+Tracker: <sparkline-bartrack id="sparky" value="valuespark" height=20 max-points=20 number-digit-group-sep='.' number-decimal-mark=',' tooltip-suffix='kBytes/s'></sparkline-bartrack>
+</div>
+
+</body>
+</html>

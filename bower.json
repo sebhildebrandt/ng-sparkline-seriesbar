@@ -1,0 +1,13 @@
+{
+  "name": "angular-sparkline-bartrack",
+  "version": "0.0.1",
+  "main": "ng-sparkline-bartrack.js",
+  "ignore": [
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "jquery": "latest",
+    "jquery.sparkline": "latest"
+  }
+}
