@@ -1,7 +1,7 @@
 angular-sparkline-seriesbar
 ================
 
-angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.1 - (MIT-license)
+angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.2 - (MIT-license)
 
 ## Function
 
@@ -65,6 +65,10 @@ tooltipSuffix|tooltip-suffix|suffix to tooltip|tooltip-suffix='kBytes/s'
 numberDigitGroupSep|number-digit-group-sep|seperator for digit group|number-digit-group-sep=','
 numberDecimalMark|number-decimal-mark|decimal seperator|number-decimal-mark='.'
 maxPoints|max-points|maximum number of bars to display|max-points=10
+chartRangeMin|chart-range-min|Minimum Value to display|chart-range-min=0
+chartRangeMax|chart-range-max|Maximum Value to display|chart-range-max=100
+tooltipClassname|tooltip-classname|Create your own CSS class for tooltips|see DEMO
+
 
 ## Special attributes
 
