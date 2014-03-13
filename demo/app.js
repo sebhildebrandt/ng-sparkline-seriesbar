@@ -1,4 +1,4 @@
-angular.module('app', ['charts.ng.sparkbartracker']).controller('myController', function($scope) {
+angular.module('app', ['charts.ng.sparkline.seriesbar']).controller('myController', function($scope) {
     $scope.valuespark = 0;
 
     function getRandomInt (min, max) {
@@ -9,5 +9,5 @@ angular.module('app', ['charts.ng.sparkbartracker']).controller('myController', 
         $scope.$apply(function() {
             $scope.valuespark = getRandomInt(10, 90);
         });
-    }, 500);
+    }, 300);
 });

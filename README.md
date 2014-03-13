@@ -1,11 +1,11 @@
-angular-sparkline-bartrack
+angular-sparkline-seriesbar
 ================
 
-angular-sparkline-bartrack is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.1 - (MIT-license)
+angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.1 - (MIT-license)
 
 ## Function
 
-Everytime, you change the value of the directive, it adds a new bar. When reaching the maximum number, it removes the first bar, and adds the latest value at the and.   
+Everytime, you change the value of the directive, it adds a new bar. When reaching the maximum number of bars, it removes the first bar, and adds the latest value at the and.   
 
 ## Installation
 
@@ -15,7 +15,7 @@ First install the required libraries (jquery, jquery.sparkline and angular).
 # bower install
 ```
 
-Warning: bower will not install jquery.sparkline correctly. You need to do the following, to get a full js file for jquery.sparkline:
+Warning: ```bower``` will not install ```jquery.sparkline``` correctly. You need to do the following, to get a full js file for ```jquery.sparkline```:
 
 ```
 # cd components/jquery.sparkline
@@ -33,11 +33,11 @@ After that you should have a file ```jquery.sparkline.js``` in the path ```compo
     <script src="../components/jquery/dist/jquery.min.js"></script>
     <script src="../components/jquery.sparkline/dist/jquery.sparkline.js"></script>
     <script src="../components/angular/angular.min.js"></script>
-    <script src="../ng-sparkbartracker.js"></script>
+    <script src="../ng-sparkline-seriesbar.js"></script>
 </head>
 <body ng-controller="myController">
 <div class="wrapper">   
-Tracker: <sparkline-bartrack id="sparky" value="valuespark" height=20 max-points=20></sparkline-bartrack>
+Tracker: <ng-sparkline-seriesbar id="sparky" value="valuespark" height=20 max-points=20></ng-sparkline-seriesbar>
 </div>
 
 </body>
@@ -66,9 +66,38 @@ numberDigitGroupSep|number-digit-group-sep|seperator for digit group|number-digi
 numberDecimalMark|number-decimal-mark|decimal seperator|number-decimal-mark='.'
 maxPoints|max-points|maximum number of bars to display|max-points=10
 
+## Special attributes
+
+colorMap is a special attribute, because this would require an object ... so I came up wih this solution:
+
+To use e.g. this sparkline range map (different colors for different value ranges):
+
+```
+	{
+      '0:60' : 'green',
+      '61:75' : 'yellow',
+      '75:' : 'red'
+    }
+```
+
+you need to transfor it to a string like the following:
+
+```
+color-map="0-60-green 61-75-yellow 76-100-red"
+```
+
+Of course you also can use rgb-colors (like #ffbb00). The first sparkline in the demo makes use of this attrubute. Hope, this example makes it clear ;-)
+
 ## Demo
 
-in the ```demo``` directory you have a simple app, that demonstrates the sparkline-bartrack with different options. Just try it.
+in the ```demo``` directory you have a simple app, that demonstrates two different sparkline-bartracks with different options. Just try it.
+
+## Version history
+
+| Version        | Date           | Comment  |
+| -------------- | -------------- | -------- |
+| 0.0.2          | 2014-03-14     | name change of component, added options chartRangeMin, chartRangeMax |
+| 0.0.1          | 2014-03-11     | initial release |
 
 ## Comments
 

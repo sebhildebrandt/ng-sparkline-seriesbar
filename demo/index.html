@@ -4,17 +4,38 @@
     <script src="../components/jquery/dist/jquery.min.js"></script>
     <script src="../components/jquery.sparkline/dist/jquery.sparkline.js"></script>
     <script src="../components/angular/angular.min.js"></script>
-    <script src="../ng-sparkline-bartrack.js"></script>
+    <script src="../ng-sparkline-seriesbar.js"></script>
     <script src="../demo/app.js"></script>
     <style type="text/css">
         .wrapper {
-            width: 100%;
+            padding-top: 10px;
+        }
+        .tooltip {
+            position: absolute;
+            z-index: 10000;
+            left: 0px;
+            top: 0px;
+            visibility: hidden;
+            background: rgb(0, 0, 0) transparent;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            font: arial, san serif;
+            font-size: 20px;
+            text-align: left;
+            white-space: nowrap;
+            padding: 5px;
+            border: 1px solid red;
         }
     </style>
 </head>
 <body ng-controller="myController">
+
 <div class="wrapper">   
-Tracker: <sparkline-bartrack id="sparky" value="valuespark" height=20 max-points=20 number-digit-group-sep='.' number-decimal-mark=',' tooltip-suffix='kBytes/s'></sparkline-bartrack>
+    <ng-sparkline-seriesbar id="sparky" value="valuespark" height=20 max-points=20 chart-range-min=0 number-digit-group-sep='.' number-decimal-mark=',' tooltip-suffix='kBytes/s' color-map='0-60-green 61-75-#bbbb00 76-100-#dd0000'></ng-sparkline-seriesbar>
+</div>
+
+<div class="wrapper">   
+    <ng-sparkline-seriesbar id="sparky2" value="valuespark" height=50 max-points=10 bar-width=8 bar-spacing=2 chart-range-min=0 number-digit-group-sep='.' number-decimal-mark=',' tooltip-suffix='kBytes/s' tooltip-classname='tooltip'></ng-sparkline-seriesbar>
 </div>
 
 </body>
