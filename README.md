@@ -100,6 +100,7 @@ in the ```demo``` directory you have a simple app, that demonstrates two differe
 
 | Version        | Date           | Comment  |
 | -------------- | -------------- | -------- |
+| 0.0.3          | 2014-03-17     | added init option (initialize with 0 values) |
 | 0.0.2          | 2014-03-14     | name change of component, added options chartRangeMin, chartRangeMax |
 | 0.0.1          | 2014-03-11     | initial release |
 

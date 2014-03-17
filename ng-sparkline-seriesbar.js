@@ -19,7 +19,8 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                 maxPoints: '=',
                 chartRangeMin: '@',
                 chartRangeMax: '@',
-                tooltipClassname: '@'
+                tooltipClassname: '@',
+                init: '@'
             },
             template: '<span id="{{id}}-sparktracker">Loading</span>',
             replace: false,
@@ -57,6 +58,12 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                 }
 
                 scope.myPoints = scope.myPoints || [];
+                if (scope.init) {     // init with 0 values
+                    for (var i = 0; i < scope.maxPoints; i++) {
+                        scope.myPoints.push(0);
+                    };
+                }
+
                 render();
 
                 scope.$watch('value', function (updatedValue, oldValue, scope) {
