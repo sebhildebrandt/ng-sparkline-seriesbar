@@ -36,10 +36,9 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                             $element = $element.split('-');
                             customColors[$element[0] + ':' + $element[1]] = $element[2]
                         });
-//                        colorMap = $.range_map(customColors);
+                        colorMap = $.range_map(customColors);
                     }
 
-//                    $($element).sparkline($scope.myPoints, { 
                     $element.sparkline($scope.myPoints, { 
                         type: 'bar',
                         height: $scope.height || 20,
