@@ -1,7 +1,7 @@
 angular-sparkline-seriesbar
 ================
 
-angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.3 - (MIT-license)
+angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.4 - (MIT-license)
 
 ## Function
 
@@ -44,7 +44,13 @@ Tracker: <ng-sparkline-seriesbar id="sparky" value="valuespark" height=20 max-po
 </html>
 ```
 
-where ```valuespark``` is the scope-variable that you dynamically can change.
+where ```valuespark``` is the scope-variable that you dynamically can change. ```ng-sparkline-seriesbar``` can also be applied as an attribute of a ```div``` or other element, in cases where that may be important for layout:
+
+```html
+  ...
+  <div ng-sparkline-seriesbar id="sparky" value="valuespark" height=20 max-points=20></div>
+  ...
+```
 
 ## Attributes
 
@@ -100,6 +106,7 @@ in the ```demo``` directory you have a simple app, that demonstrates two differe
 
 | Version        | Date           | Comment  |
 | -------------- | -------------- | -------- |
+| 0.0.4          | 2014-09-15     | usable as div (attribute), small changes, updated docs |
 | 0.0.3          | 2014-03-17     | added init option (initialize with 0 values) |
 | 0.0.2          | 2014-03-14     | name change of component, added options chartRangeMin, chartRangeMax |
 | 0.0.1          | 2014-03-11     | initial release |
