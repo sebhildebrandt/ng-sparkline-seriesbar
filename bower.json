@@ -1,6 +1,6 @@
  {
   "name": "ng-sparkline-seriesbar",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "main": "ng-sparkline-seriesbar.js",
   "ignore": [
     "README.md"
