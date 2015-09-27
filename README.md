@@ -1,7 +1,7 @@
-angular-sparkline-seriesbar
+ng-sparkline-seriesbar
 ================
 
-angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library.
+ng-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library.
 
   [![MIT license][license-img]][license-url]
 
