@@ -1,7 +1,7 @@
-{
-  "name": "angular-sparkline-bartrack",
-  "version": "0.0.4",
-  "main": "ng-sparkline-bartrack.js",
+ {
+  "name": "ng-sparkline-seriesbar",
+  "version": "0.0.5",
+  "main": "ng-sparkline-seriesbar.js",
   "ignore": [
     "README.md"
   ],

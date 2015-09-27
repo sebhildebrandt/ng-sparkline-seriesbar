@@ -1,7 +1,9 @@
 angular-sparkline-seriesbar
 ================
 
-angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library - Version 0.0.4 - (MIT-license)
+angular-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library.
+
+  [![MIT license][license-img]][license-url]
 
 ## Function
 
@@ -15,7 +17,11 @@ First install the required libraries (jquery, jquery.sparkline and angular).
 # bower install
 ```
 
-Warning: ```bower``` will not install ```jquery.sparkline``` correctly. You need to do the following, to get a full js file for ```jquery.sparkline```:
+> **Warning:** 
+> ```bower``` will not install ```jquery.sparkline``` correctly. You need to do the following, to get a full js file for ```jquery.sparkline```:
+
+> **Note:**
+> In this package I defined in .bowerrc to store all bower dependencies in the `./component` path (default would be `./bower_components`)
 
 ```
 # cd components/jquery.sparkline
@@ -106,6 +112,7 @@ in the ```demo``` directory you have a simple app, that demonstrates two differe
 
 | Version        | Date           | Comment  |
 | -------------- | -------------- | -------- |
+| 1.0.0          | 2015-09-27     | first official final version. Updated name, docs |
 | 0.0.4          | 2014-09-15     | usable as div (attribute), small changes, updated docs |
 | 0.0.3          | 2014-03-17     | added init option (initialize with 0 values) |
 | 0.0.2          | 2014-03-14     | name change of component, added options chartRangeMin, chartRangeMax |
@@ -115,25 +122,19 @@ in the ```demo``` directory you have a simple app, that demonstrates two differe
 
 If you have ideas or comments, please do not hesitate to contact me.
 
-
-Happy tracking!
-
 Sincerely,
 
-Sebastian Hildebrandt
+Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com)
 
-http://www.plus-innovations.com
+## Credits
 
+Written by Sebastian Hildebrandt [sebhildebrandt](https://github.com/sebhildebrandt)
 
-#### Credits
+## License [![MIT license][license-img]][license-url]
 
-Written by Sebastian Hildebrandt
-
-#### License
-
->The MIT License (MIT)
+>The [`MIT`][license-url] License (MIT)
 >
->Copyright (c) 2014 +innovations.
+>Copyright &copy; 2015 Sebastian Hildebrandt, [+innovations](http://www.plus-innovations.com).
 >
 >Permission is hereby granted, free of charge, to any person obtaining a copy
 >of this software and associated documentation files (the "Software"), to deal
@@ -152,7 +153,8 @@ Written by Sebastian Hildebrandt
 >LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 >OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 >THE SOFTWARE.
-> 
->Further details see "LICENSE" file.
+
+[license-url]: https://github.com/sebhildebrandt/ng-sparkline-seriesbar/blob/master/LICENSE
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 
 
