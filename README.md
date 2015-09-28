@@ -159,4 +159,4 @@ Written by Sebastian Hildebrandt [sebhildebrandt](https://github.com/sebhildebra
 [license-url]: https://github.com/sebhildebrandt/ng-sparkline-seriesbar/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 
-[release-img]: https://img.shields.io/github/release/sebhildebrandt/ng-sparkline-seriesbar.svg
+[release-img]: https://img.shields.io/github/release/sebhildebrandt/ng-sparkline-seriesbar.svg?style=flat-square
