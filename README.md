@@ -3,7 +3,9 @@ ng-sparkline-seriesbar
 
 ng-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library.
 
+  [![Git Release][release-img]] 
   [![MIT license][license-img]][license-url]
+
 
 ## Function
 
@@ -17,7 +19,7 @@ First install the required libraries (jquery, jquery.sparkline and angular).
 # bower install
 ```
 
-> **Warning:** 
+> **Warning:**
 > ```bower``` will not install ```jquery.sparkline``` correctly. You need to do the following, to get a full js file for ```jquery.sparkline```:
 
 > **Note:**
@@ -157,4 +159,4 @@ Written by Sebastian Hildebrandt [sebhildebrandt](https://github.com/sebhildebra
 [license-url]: https://github.com/sebhildebrandt/ng-sparkline-seriesbar/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 
-
+[release-img]: https://img.shields.io/github/release/sebhildebrandt/ng-sparkline-seriesbar.svg
