@@ -3,7 +3,7 @@ ng-sparkline-seriesbar
 
 ng-sparkline-seriesbar is a angular directive, that represents a dynamic sparkline (type = bar). It is based on the [jquery.sparkline](http://omnipotent.net/jquery.sparkline) library.
 
-  [![Git Release][release-img]] 
+  ![Git Release][release-img]
   [![MIT license][license-img]][license-url]
 
 
