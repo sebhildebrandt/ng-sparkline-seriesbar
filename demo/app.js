@@ -1,5 +1,6 @@
 angular.module('app', ['charts.ng.sparkline.seriesbar']).controller('myController', function($scope) {
     $scope.valuespark = 0;
+    $scope.valuespark2 = 0;
 
     function getRandomInt (min, max) {
     	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -8,6 +9,7 @@ angular.module('app', ['charts.ng.sparkline.seriesbar']).controller('myControlle
     setInterval(function(){
         $scope.$apply(function() {
             $scope.valuespark = getRandomInt(10, 90);
+            $scope.valuespark2 = getRandomInt(10, 90);
         });
     }, 300);
 });

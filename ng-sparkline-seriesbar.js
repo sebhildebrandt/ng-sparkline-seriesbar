@@ -15,7 +15,7 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                 numberDigitGroupSep: '@',
                 numberDecimalMark: '@',
                 colorMap: '@',
-                points: '=myPoints',
+                points: '=',
                 maxPoints: '=',
                 chartRangeMin: '@',
                 chartRangeMax: '@',
@@ -56,11 +56,15 @@ angular.module("charts.ng.sparkline.seriesbar", [])
                     });
                 }
 
-                $scope.myPoints = $scope.myPoints || [];
+                $scope.myPoints = $scope.myPoints || $scope.points || [];
                 if ($scope.init) {     // init with 0 values
-                    for (var i = 0; i < $scope.maxPoints; i++) {
-                        $scope.myPoints.push(0);
-                    };
+                    if ($scope.myPoints.length > $scope.maxPoints) {
+                        $scope.myPoints.splice($scope.maxPoints);
+                    } else {
+                        while ($scope.myPoints.length < $scope.maxPoints) {
+                            $scope.myPoints.push(0);
+                        }
+                    }
                 }
 
                 render();
